@@ -13,7 +13,10 @@ import { async } from '@angular/core/testing';
 export class TodoDetailsPage implements OnInit {
 todo: TaskI = {
   task: '',
-  priority: 0
+  priority: '',
+  ci: '',
+  hora: '',
+  fecha:''
 };
 todoId= null;
   constructor(private route: ActivatedRoute, private nav:NavController,

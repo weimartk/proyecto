@@ -10,14 +10,30 @@
 <ion-content padding>
   <ion-list lines="full">
       <ion-item *ngIf="todo">
-        <ion-input required type ="text" placeholder="Taks" [(ngModel)]="todo.task">
+        <ion-input required type ="text" placeholder="Nombre Del Restaurante" [(ngModel)]="todo.task">
         </ion-input>
       </ion-item>
 
       <ion-item *ngIf="todo">
-        <ion-input required type ="number" placeholder="Priority" [(ngModel)]="todo.priority">
+        <ion-input required type ="text" placeholder="Nombre y Apellido" [(ngModel)]="todo.priority">
         </ion-input>
       </ion-item>
+
+      <ion-item *ngIf="todo">
+        <ion-input required type ="text" placeholder="C.I" [(ngModel)]="todo.ci">
+        </ion-input>
+      </ion-item>
+
+      <ion-item *ngIf="todo">
+        <ion-input required type ="text" placeholder="Hora Para La Reserva" [(ngModel)]="todo.hora">
+        </ion-input>
+      </ion-item>
+
+      <ion-item *ngIf="todo">
+        <ion-input required type ="text" placeholder="Fecha :  mm / dd / y" [(ngModel)]="todo.fecha">
+        </ion-input>
+      </ion-item>
+
   </ion-list>
   <ion-button expand="full" (click)="saveTodo()">Save</ion-button>
   <ion-fab vertical="bottom" horizontal="end" slot="fixed" color="danger">

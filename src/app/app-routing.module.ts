@@ -28,7 +28,11 @@ const routes: Routes = [
     path: 'details/:id',
     loadChildren: () => import('./pages/todo-details/todo-details.module').then( m => m.TodoDetailsPageModule)
   },
-  {path: 'details', loadChildren: () => import ('./pages/todo-details/todo-details.module').then( m => m.TodoDetailsPageModule)}
+  {path: 'details', loadChildren: () => import ('./pages/todo-details/todo-details.module').then( m => m.TodoDetailsPageModule)},
+  {
+    path: 'dumboo',
+    loadChildren: () => import('./pages/dumboo/dumboo.module').then( m => m.DumbooPageModule)
+  }
   
 ];
 
